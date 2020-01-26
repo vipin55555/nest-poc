@@ -2,7 +2,9 @@
 
 ## Description
 
-- This is a simple rest API with NestJS along side with MongoDB and mongoose
+```bash
+This is a simple rest API with NestJS along side with MongoDB and mongoose
+```
 
 ## Installation
 
@@ -19,7 +21,9 @@ $ npm install --save @nestjs/mongoose mongoose
 ```
 - To install MongoDB
 
-  - Follow this link: https://docs.mongodb.com/manual/installation/
+```bash
+Follow this link: https://docs.mongodb.com/manual/installation/
+```
 
 ## Running the app
 
