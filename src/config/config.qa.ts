@@ -8,8 +8,6 @@ export default {
 
     db: {
         dbName: 'nest-poc-db',
-        connectionString: 'mongodb://127.0.0.1:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false'
-
+        connectionString: 'mongodb://127.0.0.1:27017/nest-poc'
     }
 };
-
