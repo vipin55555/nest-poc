@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Post, Body, Put, Delete } from '@nestjs/common';
 import { ItemService } from './item.service';
-import { AddUpdateItemDto } from './dto/item.dto';
-import { Item } from './interface/item.interface';
+import { AddUpdateItemDto } from '../model/dto/item.dto';
+import { Item } from '../model/interface/item.interface';
 import config from '../config/config';
 
 @Controller(`${config.app.apiVersion}/item`)

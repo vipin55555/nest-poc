@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { AddUpdateItemDto } from './dto/item.dto';
+import { AddUpdateItemDto } from '../model/dto/item.dto';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Item } from './interface/item.interface';
+import { Item } from '../model/interface/item.interface';
 
 @Injectable()
 export class ItemService {
@@ -25,10 +25,10 @@ export class ItemService {
 
     async updateItem(id: string, itemDto: AddUpdateItemDto): Promise<Item> {
 
-        return await this.itemModel.findByIdAndUpdate(id, itemDto, { new: true });
+        return await this.itemModel.findOneAndUpdate(id, itemDto, { new: true });
     }
 
     async deleteItemById(id: string): Promise<Item> {
-        return await this.itemModel.findByIdAndDelete(id);
+        return await this.itemModel.findOneAndDelete(id);
     }
 }
